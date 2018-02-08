@@ -137,15 +137,10 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1517924670, 363115, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1518103080, 462882, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000aee073e15d0c721294d361fd0cffc6ccfe19d575e1dbfcff469922f434c"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000ba76a797575bf5ef059e5799d5ec96194525897bec3b71ba0e91a99c029"));
         assert(genesis.hashMerkleRoot == uint256S("0x6889022f3f4896450e65d87d5f1264ba44d94ee36d277d07438f9dc28512f387"));
-
-
-
-
-
 
 
         // Taurus addresses start with 'T'
@@ -176,8 +171,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  0, uint256S("0x00000aee073e15d0c721294d361fd0cffc6ccfe19d575e1dbfcff469922f434c")),
-            1517924670, // * UNIX timestamp of last checkpoint block
+            (  0, uint256S("0x00000ba76a797575bf5ef059e5799d5ec96194525897bec3b71ba0e91a99c029")),
+            1518103080, // * UNIX timestamp of last checkpoint block
             0,    // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0        // * estimated number of transactions per day after checkpoint
@@ -253,9 +248,9 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1517924671, 1855358, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1518103100, 81543, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000072a778c99fc04ea159fb4997a5c2cb30a56c84802ab2cb07218e201d9eb"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000028d767832850a54a1674aa5896ef446cc960fd8f8eb5b91ebfd7dec76a3"));
         assert(genesis.hashMerkleRoot == uint256S("0x6889022f3f4896450e65d87d5f1264ba44d94ee36d277d07438f9dc28512f387"));
 
         vFixedSeeds.clear();
@@ -290,8 +285,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (    0, uint256S("0x0000072a778c99fc04ea159fb4997a5c2cb30a56c84802ab2cb07218e201d9eb")),
-            1517924671, // * UNIX timestamp of last checkpoint block
+            (    0, uint256S("0x0000028d767832850a54a1674aa5896ef446cc960fd8f8eb5b91ebfd7dec76a3")),
+            1518103100, // * UNIX timestamp of last checkpoint block
             0,       // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0         // * estimated number of transactions per day after checkpoint
@@ -361,9 +356,9 @@ public:
         nDefaultPort = 19994;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1517924672, 0, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1518103200, 9585, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x6bb7344b5545fbfee317022e677254b41ab27d92ead7994363381a0917bca3a5"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000198d5b0f9dae57fa4749776ae62026f9888316ff05b0fbf273ede07a48d"));
         assert(genesis.hashMerkleRoot == uint256S("0x6889022f3f4896450e65d87d5f1264ba44d94ee36d277d07438f9dc28512f387"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
@@ -379,8 +374,8 @@ public:
 
         checkpointData = (CCheckpointData){
             boost::assign::map_list_of
-            ( 0, uint256S("0x6bb7344b5545fbfee317022e677254b41ab27d92ead7994363381a0917bca3a5")),
-            1517924672,
+            ( 0, uint256S("0x00000198d5b0f9dae57fa4749776ae62026f9888316ff05b0fbf273ede07a48d")),
+            1518103200,
             0,
             0
         };
