@@ -1,0 +1,22 @@
+[Unit]
+Description=Taurus's distributed currency daemon
+After=network.target
+
+[Service]
+User=tauruscore
+Group=tauruscore
+
+Type=forking
+PIDFile=/var/lib/taurusd/taurusd.pid
+ExecStart=/usr/bin/taurusd -daemon -pid=/var/lib/taurusd/taurusd.pid \
+-conf=/etc/tauruscore/taurus.conf -datadir=/var/lib/taurusd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

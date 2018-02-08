@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/taurus_bg.qm</file>
+        <file alias="de">locale/taurus_de.qm</file>
+        <file alias="en">locale/taurus_en.qm</file>
+        <file alias="es">locale/taurus_es.qm</file>
+        <file alias="fi">locale/taurus_fi.qm</file>
+        <file alias="fr">locale/taurus_fr.qm</file>
+        <file alias="it">locale/taurus_it.qm</file>
+        <file alias="ja">locale/taurus_ja.qm</file>
+        <file alias="pl">locale/taurus_pl.qm</file>
+        <file alias="pt">locale/taurus_pt.qm</file>
+        <file alias="ru">locale/taurus_ru.qm</file>
+        <file alias="sk">locale/taurus_sk.qm</file>
+        <file alias="sv">locale/taurus_sv.qm</file>
+        <file alias="vi">locale/taurus_vi.qm</file>
+        <file alias="zh_CN">locale/taurus_zh_CN.qm</file>
+        <file alias="zh_TW">locale/taurus_zh_TW.qm</file>
+    </qresource>
+</RCC>

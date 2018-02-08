@@ -1,0 +1,6 @@
+usr/local/bin/taurus-qt usr/bin
+share/pixmaps/taurus32.xpm usr/share/pixmaps
+share/pixmaps/taurus16.xpm usr/share/pixmaps
+share/pixmaps/taurus128.png usr/share/pixmaps
+debian/taurus-qt.desktop usr/share/applications
+debian/taurus-qt.protocol usr/share/kde4/services/
