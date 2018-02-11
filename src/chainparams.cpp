@@ -142,6 +142,8 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x00000a8825150eea0f1beef8783c4c2928f76360ead12d39adbd5d07fc7d61e4"));
         assert(genesis.hashMerkleRoot == uint256S("0x6889022f3f4896450e65d87d5f1264ba44d94ee36d277d07438f9dc28512f387"));
 
+        // DNS Seeder
+        vSeeds.push_back(CDNSSeedData("dnsseed.tauruspay.online", "dnsseed-vps1.tauruspay.online"));
 
         // Taurus addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
