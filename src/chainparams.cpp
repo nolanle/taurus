@@ -137,9 +137,9 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1518105520, 178141, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1518105600, 504365040, 0x207fffff, 3115653, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000a8825150eea0f1beef8783c4c2928f76360ead12d39adbd5d07fc7d61e4"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000005c68d67c0ed276a0df054551c2a1c25283b2841cb3a04cf3c7ae8928ad4"));
         assert(genesis.hashMerkleRoot == uint256S("0x6889022f3f4896450e65d87d5f1264ba44d94ee36d277d07438f9dc28512f387"));
 
         // DNS Seeder
