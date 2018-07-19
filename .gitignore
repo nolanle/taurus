@@ -84,6 +84,9 @@ Makefile
 taurus-qt
 Taurus-Qt.app
 
+# Depends
+!depends/Makefile
+
 # Unit-tests
 Makefile.test
 taurus-qt_test
