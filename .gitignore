@@ -67,6 +67,16 @@ libconftest.dylib*
 *.pb.cc
 *.pb.h
 
+!depends/patches/native_biplist/sorted_list.patch
+!depends/patches/native_cdrkit/cdrkit-deterministic.patch
+!depends/patches/native_mac_alias/python3.patch
+!depends/patches/qt/fix_qt_pkgconfig.patch
+!depends/patches/qt/fix-xcb-include-order.patch
+!depends/patches/qt/mingw-uuidof.patch
+!depends/patches/qt/pidlist_absolute.patch
+!depends/patches/zeromq/9e6745c12e0b100cd38acecc16ce7db02905e27c.patch
+!depends/patches/zeromq/9114d3957725acd34aa8b8d011585812f3369411.patch
+
 *.log
 *.trs
 *.dmg
