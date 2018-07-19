@@ -132,3 +132,6 @@ taurus-cli
 taurusd
 taurus-qt
 make
+
+#ide
+.vscode/

@@ -51,7 +51,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Maybe, blockchain is a technology created by aliens - 03, Jan 2018";
+    const char* pszTimestamp = "Maybe, blockchain is a technology created by aliens - 19, July 2018";
     const CScript genesisOutputScript = CScript() << ParseHex("040da80760a1321faefecf3ef36e2fbc13e93decb26f381e82ae115de03b6df0a046d0a016c5d953ce7dd8d53c98a2c4f231a985016cde439088493dd15f5820aa") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -137,13 +137,14 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1518105600, 504365040, 0x207fffff, 3115653, 50 * COIN);
+        genesis = CreateGenesisBlock(1531981435, 577096, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000005c68d67c0ed276a0df054551c2a1c25283b2841cb3a04cf3c7ae8928ad4"));
-        assert(genesis.hashMerkleRoot == uint256S("0x6889022f3f4896450e65d87d5f1264ba44d94ee36d277d07438f9dc28512f387"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000001a93ed25e38b6bd0d32699ca310ed4a6cd5fee3ad10b66edff9353e870d"));
+        // printf("MAINNET: genesis.hashMerkleRoot = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        assert(genesis.hashMerkleRoot == uint256S("0x0082a83db5e693015d58936d374934dc037edc6003733059925bdebee813f637"));
 
         // DNS Seeder
-        vSeeds.push_back(CDNSSeedData("dnsseed.tauruspay.online", "dnsseed-vps1.tauruspay.online"));
+        vSeeds.push_back(CDNSSeedData("159.65.129.140", "159.65.129.140"));
 
         // Taurus addresses start with 'T'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
